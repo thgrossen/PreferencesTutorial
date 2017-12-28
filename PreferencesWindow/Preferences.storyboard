@@ -8,9 +8,9 @@
         <!--Window Controller-->
         <scene sceneID="dhl-jS-4rY">
             <objects>
-                <windowController id="Rqw-GB-nSm" sceneMemberID="viewController">
+                <windowController id="Rqw-GB-nSm" customClass="PreferencesWindowController" customModule="PreferencesTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="jCK-cv-aDA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="245" y="258" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="922"/>
@@ -29,12 +29,13 @@
         <!--Tab View Controller-->
         <scene sceneID="r6D-qp-HkB">
             <objects>
-                <tabViewController id="J6k-5a-SbH" sceneMemberID="viewController">
+                <tabViewController tabStyle="toolbar" id="J6k-5a-SbH" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem identifier="" image="NSInfo" id="A1Q-mE-RUm"/>
                         <tabViewItem identifier="" image="NSUser" id="Aqn-ra-OlR"/>
                         <tabViewItem image="NSAdvanced" id="QPX-7w-vur"/>
                     </tabViewItems>
+                    <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
                     <tabView key="tabView" type="noTabsNoBorder" id="Mj1-0u-SZL">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -55,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="-122" y="263"/>
         </scene>
-        <!--View Controller-->
+        <!--Info-->
         <scene sceneID="N6l-xC-bfR">
             <objects>
-                <viewController id="CbG-uA-UXG" sceneMemberID="viewController">
+                <viewController title="Info" id="CbG-uA-UXG" customClass="PreferencesViewController" customModule="PreferencesTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="4Ei-kU-JuY">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="140"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -78,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="548" y="-3"/>
         </scene>
-        <!--View Controller-->
+        <!--User-->
         <scene sceneID="qGp-4b-l0U">
             <objects>
-                <viewController id="jIF-zo-Q9v" sceneMemberID="viewController">
+                <viewController title="User" id="jIF-zo-Q9v" customClass="PreferencesViewController" customModule="PreferencesTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="XZr-ZU-qCW">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="140"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -101,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="548" y="203"/>
         </scene>
-        <!--View Controller-->
+        <!--Advanced-->
         <scene sceneID="jhe-2J-srl">
             <objects>
-                <viewController id="7rO-Td-oYW" sceneMemberID="viewController">
+                <viewController title="Advanced" id="7rO-Td-oYW" customClass="PreferencesViewController" customModule="PreferencesTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="jC6-k2-78d">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -121,7 +122,7 @@
                                 <rect key="frame" x="20" y="20" width="410" height="238"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" ambiguous="YES" id="8P3-ff-99o">
-                                    <rect key="frame" x="1" y="23" width="408" height="214"/>
+                                    <rect key="frame" x="1" y="0.0" width="408" height="237"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Xqi-tq-pEU" viewBased="YES" id="dDg-jI-oSi">
@@ -202,7 +203,7 @@
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="i8e-xy-6sy">
-                                    <rect key="frame" x="1" y="119" width="223" height="15"/>
+                                    <rect key="frame" x="1" y="8" width="0.0" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="QhW-Bf-HEt">

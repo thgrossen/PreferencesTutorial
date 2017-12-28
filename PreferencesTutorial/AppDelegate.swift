@@ -10,8 +10,8 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
+    
+    var preferencesController: NSWindowController?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -21,6 +21,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-
+    @IBAction func showPreferences(_ sender: Any) {
+        
+        if (preferencesController == nil) {
+            let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Preferences"), bundle: nil)
+            preferencesController = storyboard.instantiateInitialController() as? NSWindowController
+        }
+        
+        if (preferencesController != nil) {
+            preferencesController!.showWindow(sender)
+        }
+    }
+    
 }
 

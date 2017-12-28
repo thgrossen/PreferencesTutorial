@@ -12,6 +12,8 @@
 		E99C7A991FE043E500C87683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99C7A981FE043E500C87683 /* Assets.xcassets */; };
 		E99C7A9C1FE043E500C87683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99C7A9A1FE043E500C87683 /* Main.storyboard */; };
 		E99C7AAE1FE0461000C87683 /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99C7AAD1FE0461000C87683 /* Preferences.storyboard */; };
+		E9AD42771FF3FFFF00B49535 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AD42761FF3FFFF00B49535 /* PreferencesViewController.swift */; };
+		E9AD427F1FF419DD00B49535 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AD427E1FF419DD00B49535 /* PreferencesWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		E99C7A9D1FE043E500C87683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E99C7A9E1FE043E500C87683 /* PreferencesTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreferencesTutorial.entitlements; sourceTree = "<group>"; };
 		E99C7AAD1FE0461000C87683 /* Preferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
+		E9AD42761FF3FFFF00B49535 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		E9AD427E1FF419DD00B49535 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				E99C7AAD1FE0461000C87683 /* Preferences.storyboard */,
+				E9AD42761FF3FFFF00B49535 /* PreferencesViewController.swift */,
+				E9AD427E1FF419DD00B49535 /* PreferencesWindowController.swift */,
 			);
 			path = PreferencesWindow;
 			sourceTree = "<group>";
@@ -148,6 +154,8 @@
 			files = (
 				E99C7A971FE043E500C87683 /* ViewController.swift in Sources */,
 				E99C7A951FE043E500C87683 /* AppDelegate.swift in Sources */,
+				E9AD427F1FF419DD00B49535 /* PreferencesWindowController.swift in Sources */,
+				E9AD42771FF3FFFF00B49535 /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
