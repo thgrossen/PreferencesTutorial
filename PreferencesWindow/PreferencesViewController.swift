@@ -21,7 +21,9 @@ class PreferencesViewController: NSViewController {
         super.viewDidAppear()
         
         // Update window title with the active TabView Title
-        self.parent?.view.window?.title = self.title!
+        if let title = self.title {
+            self.parent?.view.window?.title = title
+        }
     }
     
 }

@@ -23,13 +23,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func showPreferences(_ sender: Any) {
         
-        if (preferencesController == nil) {
-            let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Preferences"), bundle: nil)
-            preferencesController = storyboard.instantiateInitialController() as? NSWindowController
+        if self.preferencesController == nil {
+            let storyboard = NSStoryboard(name: NSStoryboard.Name("Preferences"), bundle: nil)
+            self.preferencesController = storyboard.instantiateInitialController() as? NSWindowController
         }
         
-        if (preferencesController != nil) {
-            preferencesController!.showWindow(sender)
+        if let controller = self.preferencesController {
+            controller.showWindow(sender)
         }
     }
     
