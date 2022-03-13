@@ -11,7 +11,7 @@
             <objects>
                 <windowController id="Rqw-GB-nSm" customClass="PreferencesWindowController" customModule="PreferencesTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="jCK-cv-aDA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="245" y="258" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="922"/>
@@ -164,7 +164,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="277" minWidth="40" maxWidth="1000" id="h7f-aw-bar">
+                                                <tableColumn width="248" minWidth="40" maxWidth="1000" id="h7f-aw-bar">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -177,11 +177,11 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="VVh-DQ-D7P">
-                                                            <rect key="frame" x="125" y="1" width="281" height="17"/>
+                                                            <rect key="frame" x="125" y="1" width="252" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3T6-pr-JtY">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="281" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="252" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="1HM-aq-Gms">
                                                                         <font key="font" metaFont="system"/>
